@@ -60,9 +60,17 @@ export default {
       }
     },
     created() {
+      return {
+        headers: ['productCreate'],
+        products: []
+      }
       this.getProducts();
     },
     updated() {
+      return {
+        headers: ['productUpdate'],
+        products: []
+      }
       this.applyTable();
     }
 }
